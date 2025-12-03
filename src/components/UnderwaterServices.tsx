@@ -1,7 +1,7 @@
 import { ArrowLeft, Waves, Anchor, Ship, Leaf, Mail, Phone } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import pierImage from 'figma:asset/45f25a1abf5c2cfc16b8d69c4aceecca39f8c8dd.png';
-import beachImage from 'figma:asset/32b45bc59d6d15d185de508994c1f8241327e9e5.png';
+import pierImage from '../assets/45f25a1abf5c2cfc16b8d69c4aceecca39f8c8dd.png';
+import beachImage from '../assets/32b45bc59d6d15d185de508994c1f8241327e9e5.png';
 
 interface UnderwaterServicesProps {
   onNavigate: (page: 'landing') => void;
@@ -52,7 +52,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
-      {/* Header */}
       <header className="bg-black/50 backdrop-blur-sm border-b border-cyan-900/30 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <button
@@ -69,7 +68,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/20 to-transparent"></div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -91,7 +89,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12 text-white">
@@ -106,12 +103,8 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
                 <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl mb-2 text-white">
-                  {service.title}
-                </h3>
-                <p className="text-xl mb-4 text-cyan-300">
-                  {service.titleTr}
-                </p>
+                <h3 className="text-2xl mb-2 text-white">{service.title}</h3>
+                <p className="text-xl mb-4 text-cyan-300">{service.titleTr}</p>
                 <p className="text-gray-400 mb-2">{service.description}</p>
                 <p className="text-gray-500">{service.descriptionTr}</p>
               </div>
@@ -120,7 +113,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
         </div>
       </section>
 
-      {/* Portfolio Gallery */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl text-center mb-12 text-white">
@@ -146,7 +138,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl mb-8 text-white">
@@ -174,7 +165,6 @@ export function UnderwaterServices({ onNavigate }: UnderwaterServicesProps) {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-8 px-4 border-t border-cyan-900/30 bg-black/50">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex flex-wrap items-center justify-center gap-6 text-gray-400 mb-4">
